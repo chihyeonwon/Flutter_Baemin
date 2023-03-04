@@ -37,3 +37,11 @@ Top의 SearchBar를 TextformField를 사용하여 구현하였습니다.
 카드 위젯을 사용해서 카드 안에 아이콘이나 글자를 넣어서 구현하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/222920279-378dc0ac-1fdd-45d8-a422-276009adc050.png)
+
+## Top Carousel Slider
+```
+Carousel Slider를 사용하여 슬라이더를 구현하였습니다.
+모두 11개의 이미지와 index를 사용해서 구현하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/222922213-8495ebaa-604c-45d8-909d-17f4e6dddd7f.png)
+  
