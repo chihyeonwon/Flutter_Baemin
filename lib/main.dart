@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Padding(
                 padding: const EdgeInsets.only(right: 10.0),
                 child: Icon(
-                  Icons.add_box,
+                  Icons.grid_view,
                   size: 27.0,
                 ),
               ),
