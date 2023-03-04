@@ -3,7 +3,7 @@
 ```
 개발 툴 : Flutter
 개발 언어 : Dart
-개발 일시 : 2023-03-01 - ~ 
+개발 일시 : 2023-03-04 - ~ 
 개발자 : Won Chi Hyeon
 ```
 
@@ -18,3 +18,10 @@ Top, latest, sale, live, present, whole, other, bottom 총 8개로 분리한 후
 ```
 ![image](https://user-images.githubusercontent.com/58906858/222881982-bd3c5809-ff35-4702-bd3f-db81aef58f1f.png)
 ![image](https://user-images.githubusercontent.com/58906858/222881994-ce24fa2d-0509-487f-a8fc-e631af14f000.png)
+
+## HomeScreen AppBar
+```
+주소설정 페이지를 title을 사용하여 배치,
+아이콘 3개를 action을 사용하여 배치하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/222883543-f00ff4f4-476b-4cf4-8a21-66da6405d2a7.png)
