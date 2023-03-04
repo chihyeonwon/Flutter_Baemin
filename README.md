@@ -16,3 +16,5 @@
 따라서 홈스크린의 UI를 크게 보여주고자 하는 기능에 따라서
 Top, latest, sale, live, present, whole, other, bottom 총 8개로 분리한 후에 합치는 쪽으로 설계하였습니다.
 ```
+![image](https://user-images.githubusercontent.com/58906858/222881982-bd3c5809-ff35-4702-bd3f-db81aef58f1f.png)
+![image](https://user-images.githubusercontent.com/58906858/222881994-ce24fa2d-0509-487f-a8fc-e631af14f000.png)
