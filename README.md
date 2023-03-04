@@ -44,4 +44,10 @@ Carousel Slider를 사용하여 슬라이더를 구현하였습니다.
 모두 11개의 이미지와 index를 사용해서 구현하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/222922213-8495ebaa-604c-45d8-909d-17f4e6dddd7f.png)
-  
+
+## Top 위젯 완성
+```
+슬라이더 밑에 카드 위젯 4개를 margin : zero를 주고 구현하고 Top 위젯을 완성하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/222923547-dfe68675-bfde-4c0d-8f88-9a2097cdd565.png)
+
