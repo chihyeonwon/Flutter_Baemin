@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 class Top extends StatefulWidget {
@@ -8,35 +9,7 @@ class Top extends StatefulWidget {
 }
 
 class _TopState extends State<Top> {
-  final TextEditingController _textController = new TextEditingController();
-  Widget _changedTextWidget = Container();
-
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  void checkText(String text) {
-    _changedTextWidget = Container(
-      child: Text.rich(
-        //Text.rich 와 TextSpan 을 사용하여 다양한 스타일의 텍스트를 한줄에 표시할 수 있게 하는 위젯
-        TextSpan(
-          text: '=> ', //기본 스타일의 텍스트 (default text style)
-          children: [
-            TextSpan(
-              //TextSpan 위젯을 이용하여 다양한 스타일의 텍스트 사용 가능
-              text: '$text',
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.redAccent,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-    setState(() {}); //setState 를 사용하여 화면 다시 그려줌
-  }
+  List item = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
   @override
   Widget build(BuildContext context) {
@@ -181,21 +154,21 @@ class _TopState extends State<Top> {
           child: Row(
             children: [
               Padding(
-                  padding: const EdgeInsets.only(left:8.0, bottom:17),
+                  padding: const EdgeInsets.only(left: 8.0, bottom: 17),
                   child: Card(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: Container(
-                      width:120.0,
-                      height:100.0,
+                      width: 120.0,
+                      height: 100.0,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(
                             Icons.live_tv,
                             size: 40,
-                            color:Colors.red,
+                            color: Colors.red,
                           ),
                           Text('쇼핑라이브',
                               style: TextStyle(
@@ -207,21 +180,21 @@ class _TopState extends State<Top> {
                     ),
                   )),
               Padding(
-                  padding: const EdgeInsets.only(left:8.0, bottom:17),
+                  padding: const EdgeInsets.only(left: 8.0, bottom: 17),
                   child: Card(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: Container(
-                      width:120.0,
-                      height:100.0,
+                      width: 120.0,
+                      height: 100.0,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(
                             Icons.fastfood,
                             size: 40,
-                            color:Colors.red,
+                            color: Colors.red,
                           ),
                           Text('전국별미',
                               style: TextStyle(
@@ -233,21 +206,21 @@ class _TopState extends State<Top> {
                     ),
                   )),
               Padding(
-                  padding: const EdgeInsets.only(left:8.0, bottom:17),
+                  padding: const EdgeInsets.only(left: 8.0, bottom: 17),
                   child: Card(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: Container(
-                      width:120.0,
-                      height:100.0,
+                      width: 120.0,
+                      height: 100.0,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(
                             Icons.card_giftcard,
                             size: 40,
-                            color:Colors.red,
+                            color: Colors.red,
                           ),
                           Text('선물하기',
                               style: TextStyle(
@@ -259,21 +232,21 @@ class _TopState extends State<Top> {
                     ),
                   )),
               Padding(
-                  padding: const EdgeInsets.only(left:8.0, bottom:17),
+                  padding: const EdgeInsets.only(left: 8.0, bottom: 17),
                   child: Card(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: Container(
-                      width:120.0,
-                      height:100.0,
+                      width: 120.0,
+                      height: 100.0,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(
                             Icons.arrow_circle_left,
                             size: 40,
-                            color:Colors.blue,
+                            color: Colors.blue,
                           ),
                           Text('만화경',
                               style: TextStyle(
@@ -284,8 +257,60 @@ class _TopState extends State<Top> {
                       ),
                     ),
                   )),
-
             ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: CarouselSlider(
+            items: item.map((i) {
+              return Builder(
+                builder: (BuildContext context) {
+                  return Container(
+                    child: Stack(
+                      children: [
+                        GestureDetector(
+                          onTap: () {}, // 화면 이동
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(12),
+                            child: Image.asset(
+                              'asset/img/image${i}.png',
+                              fit: BoxFit.cover,
+                              width: MediaQuery.of(context).size.width,
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          bottom:12.0,
+                          right:10.0,
+                          child: ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: Opacity(
+                                opacity: 0.5,
+                                child: Container(
+                                    color: Colors.black,
+                                    width: 130.0,
+                                    height: 30.0,
+                                    child: Center(
+                                      child: Text('${i} / 11 모두보기',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                          )),
+                                    )),
+                              )),
+                        )
+                      ],
+                    ),
+                  );
+                },
+              );
+            }).toList(),
+            options: CarouselOptions(
+              viewportFraction: 1,
+              autoPlay: true, //자동재생 여부
+              height: 150.0,
+            ),
           ),
         ),
       ],
