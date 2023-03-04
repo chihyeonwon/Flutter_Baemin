@@ -31,3 +31,9 @@ Top, latest, sale, live, present, whole, other, bottom 총 8개로 분리한 후
 Top의 SearchBar를 TextformField를 사용하여 구현하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/222918868-3ce2512c-cc4c-483d-a033-0377d384acae.png)
+
+## Top Card
+```
+카드 위젯을 사용해서 카드 안에 아이콘이나 글자를 넣어서 구현하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/222920279-378dc0ac-1fdd-45d8-a422-276009adc050.png)
