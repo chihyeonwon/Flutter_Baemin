@@ -25,3 +25,9 @@ Top, latest, sale, live, present, whole, other, bottom 총 8개로 분리한 후
 아이콘 3개를 action을 사용하여 배치하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/222883543-f00ff4f4-476b-4cf4-8a21-66da6405d2a7.png)
+
+## Top SearchBar
+```
+Top의 SearchBar를 TextformField를 사용하여 구현하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/222918868-3ce2512c-cc4c-483d-a033-0377d384acae.png)
