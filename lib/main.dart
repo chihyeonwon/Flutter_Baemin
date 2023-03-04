@@ -45,11 +45,52 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.teal[200],
+        toolbarHeight: 70,
+        // appBar 높이 70
+        elevation: 0,
+        // 음영 0
+        title: InkWell(
+          onTap:() { }, // 주소 설정 페이지로 이동
+            child: Text('강원 원주시 흥업면 남원로 52▼',
+                style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold))),
+        // 주소
+        actions: [
+          // 오른쪽 아이콘 위젯들
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(right: 10.0),
+                child: Icon(
+                  Icons.add_box,
+                  size: 27.0,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(right: 10.0),
+                child: Icon(
+                  Icons.circle_notifications,
+                  size: 27.0,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(right: 10.0),
+                child: Icon(
+                  Icons.account_circle_rounded,
+                  size: 27.0,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
       body: SingleChildScrollView(
-        child:Column(
+        child: Column(
           children: [
             Top(),
             Latest(),
@@ -65,4 +106,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
