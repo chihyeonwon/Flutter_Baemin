@@ -1,16 +1,11 @@
 # baeminclone
 
-A new Flutter project.
+```
+개발 툴 : Flutter
+개발 언어 : Dart
+개발 일시 : 2023-03-01 - ~ 
+개발자 : Won Chi Hyeon
+```
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 클론 코딩할 앱 "배달의 민족"
+![image](https://user-images.githubusercontent.com/58906858/222881300-d7f96532-26cc-432f-b816-9e8c4fc30f4a.png)
