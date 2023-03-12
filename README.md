@@ -57,3 +57,9 @@ Latest 최근에 주문한 음식점을 보여주는 카드형식의 위젯과 �
 ```
 ![image](https://user-images.githubusercontent.com/58906858/224534129-6e3098a7-43d4-4aaa-b601-33bbd677a649.png)
 
+## Sales 위젯 구현
+```
+Sales 위젯 역시 Latest 위젯과 마찬가지로 카드형식의 위젯으로 구현하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/224535517-e0f19547-da8e-403c-b8dd-da0eb0912ec3.png)
+
