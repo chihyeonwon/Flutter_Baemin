@@ -281,8 +281,8 @@ class _TopState extends State<Top> {
                           ),
                         ),
                         Positioned(
-                          bottom:12.0,
-                          right:10.0,
+                          bottom: 12.0,
+                          right: 10.0,
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(12),
                               child: Opacity(
@@ -311,6 +311,109 @@ class _TopState extends State<Top> {
               autoPlay: true, //자동재생 여부
               height: 150.0,
             ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom:25.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Card(
+                margin:EdgeInsets.zero,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(30), bottomLeft: Radius.circular(30)),
+                ),
+                child: Container(
+                  padding:EdgeInsets.zero,
+                  width: 90.0,
+                  height: 100.0,
+                  constraints: BoxConstraints(),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.arrow_circle_right_outlined,
+                        size: 40,
+                      ),
+                      Text('포인트',
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.bold,
+                          ))
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                margin:EdgeInsets.zero,
+                child: Container(
+                  padding:EdgeInsets.zero,
+                  width: 90.0,
+                  height: 100.0,
+                  constraints: BoxConstraints(),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.dashboard_rounded,
+                        size: 40,
+                      ),
+                      Text('쿠폰함',
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.bold,
+                          ))
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                margin:EdgeInsets.zero,
+                child: Container(
+                  padding:EdgeInsets.zero,
+                  width: 90.0,
+                  height: 100.0,
+                  constraints: BoxConstraints(),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.card_giftcard,
+                        size: 40,
+                      ),
+                      Text('선물함',
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.bold,
+                          ))
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                margin:EdgeInsets.zero,
+                child: Container(
+                  padding:EdgeInsets.zero,
+                  width: 90.0,
+                  height: 100.0,
+                  constraints: BoxConstraints(),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.favorite_border ,
+                            size: 40,
+                          ),
+                        Text('찜',
+                            style: TextStyle(
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                          ))
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ],
