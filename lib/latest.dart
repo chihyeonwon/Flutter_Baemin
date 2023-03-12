@@ -1,54 +1,68 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-class Latest extends StatelessWidget {
+class Latest extends StatefulWidget {
   const Latest({Key? key}) : super(key: key);
+
+  @override
+  State<Latest> createState() => _LatestState();
+}
+
+class _LatestState extends State<Latest> {
+
+  List<int> item = [1, 2, 3, 4, 5];
 
   @override
   Widget build(BuildContext context) {
     return Material(
         child: Container(
       width: 1000.0,
-      height: 400.0,
+      height: 650.0,
       color: Colors.white,
-      child: Stack(
+      child: Column(
         children: [
-          Positioned(
-            top: 20.0,
-            left: 15.0,
+          Padding(
+            padding: const EdgeInsets.only(top: 20.0,),
             child: Row(
               children: [
-                Text('최근에 주문했어요',
-                    style: TextStyle(
-                      fontSize: 22.0,
-                      fontWeight: FontWeight.bold,
-                    )),
-                Padding(
-                  padding: const EdgeInsets.only(left: 8.0),
-                  child: Icon(Icons.back_hand),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left:20.0),
+                      child: Text('최근에 주문했어요',
+                          style: TextStyle(
+                            fontSize: 22.0,
+                            fontWeight: FontWeight.bold,
+                          )),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: Icon(Icons.back_hand),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Icon(
+                        Icons.question_mark,
+                        size: 17,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left:30.0,),
+                      child: Row(
+                        children: [
+                          Text('주문내역 보기',
+                              style: TextStyle(
+                                fontSize: 17.0,
+                              )),
+                          Icon(
+                            Icons.arrow_forward_ios,
+                            size: 15.0,
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(4.0),
-                  child: Icon(
-                    Icons.question_mark,
-                    size: 17,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Positioned(
-            top: 24.0,
-            right: 20.0,
-            child: Row(
-              children: [
-                Text('주문내역 보기',
-                    style: TextStyle(
-                      fontSize: 17.0,
-                    )),
-                Icon(
-                  Icons.arrow_forward_ios,
-                  size: 15.0,
-                )
               ],
             ),
           ),
@@ -360,6 +374,40 @@ class Latest extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: CarouselSlider(
+              items: item.map((i) {
+                return Builder(
+                  builder: (BuildContext context) {
+                    return Container(
+                      child: Stack(
+                        children: [
+                          GestureDetector(
+                            onTap: () {}, // 화면 이동
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: Image.asset(
+                                'asset/img/image${i}.png',
+                                fit: BoxFit.cover,
+                                width: MediaQuery.of(context).size.width,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
+                );
+              }).toList(),
+              options: CarouselOptions(
+                viewportFraction: 1,
+                scrollDirection: Axis.vertical,
+                autoPlay: true, //자동재생 여부
+                height: 120.0,
+              ),
             ),
           ),
         ],
