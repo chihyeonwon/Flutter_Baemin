@@ -74,3 +74,9 @@ Live 위젯 역시 Sales 위젯과 마찬가지로 카드형식의 위젯으로 
 Prsent 위젯 역시 Live 위젯과 마찬가지로 카드형식의 위젯으로 구현하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/224558660-85f8fc9f-d9c9-4070-921b-b0202f666b45.png)
+
+## Whole 위젯 구현
+```
+Whole 위젯 역시 Prsent 위젯과 마찬가지로 카드형식의 위젯으로 구현하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/224559561-d4d025d8-557d-4b03-8419-64a7fa2e058c.png)
