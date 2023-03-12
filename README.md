@@ -51,3 +51,9 @@ Carousel Slider를 사용하여 슬라이더를 구현하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/222923547-dfe68675-bfde-4c0d-8f88-9a2097cdd565.png)
 
+## Latest 위젯 구현
+```
+Latest 최근에 주문한 음식점을 보여주는 카드형식의 위젯과 광고 슬라이더를 구현하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/224534129-6e3098a7-43d4-4aaa-b601-33bbd677a649.png)
+
