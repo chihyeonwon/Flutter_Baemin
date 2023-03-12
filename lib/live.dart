@@ -18,7 +18,7 @@ class _LiveState extends State<Live> {
       child: Material(
         child: Container(
           width: 1000.0,
-          height: 600.0,
+          height: 520.0,
           color: Colors.white,
           child: Column(
             children: [
