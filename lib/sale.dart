@@ -10,7 +10,7 @@ class Sale extends StatelessWidget {
       child: Material(
         child: Container(
           width: 1000.0,
-          height: 650.0,
+          height: 270.0,
           color: Colors.white,
           child: Column(
             children: [
@@ -40,13 +40,14 @@ class Sale extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(
-                            left: 130.0,
+                            left: 150.0,
                           ),
                           child: Row(
                             children: [
                               Text('전체 보기',
                                   style: TextStyle(
                                     fontSize: 17.0,
+                                    fontWeight: FontWeight.bold,
                                   )),
                               Icon(
                                 Icons.arrow_forward_ios,
