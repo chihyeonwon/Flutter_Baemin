@@ -80,3 +80,9 @@ Prsent 위젯 역시 Live 위젯과 마찬가지로 카드형식의 위젯으로
 Whole 위젯 역시 Prsent 위젯과 마찬가지로 카드형식의 위젯으로 구현하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/224559561-d4d025d8-557d-4b03-8419-64a7fa2e058c.png)
+
+## Other 위젯 구현
+```
+Other 위젯 역시 Whole 위젯과 마찬가지로 카드형식의 위젯으로 구현하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/224778318-f3c36560-d78d-4c4c-b1d3-71ba49fd3c58.png)
