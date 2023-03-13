@@ -52,6 +52,7 @@ class _LatestState extends State<Latest> {
                         children: [
                           Text('주문내역 보기',
                               style: TextStyle(
+                                fontWeight: FontWeight.bold,
                                 fontSize: 17.0,
                               )),
                           Icon(
