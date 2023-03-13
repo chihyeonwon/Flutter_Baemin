@@ -42,7 +42,7 @@ class _PresentState extends State<Present> {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(
-                            left: 60.0,
+                            left: 50.0,
                           ),
                           child: Row(
                             children: [

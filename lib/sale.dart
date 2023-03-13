@@ -40,7 +40,7 @@ class Sale extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(
-                            left: 150.0,
+                            left: 110.0,
                           ),
                           child: Row(
                             children: [

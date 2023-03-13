@@ -45,7 +45,7 @@ class _LiveState extends State<Live> {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(
-                            left: 120.0,
+                            left: 90.0,
                           ),
                           child: Row(
                             children: [
