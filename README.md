@@ -94,3 +94,15 @@ Bottom 위젯은 컨테이너 배너와 텍스트들로 구현하였습니다.
 Bottom 위젯을 끝으로 배달의민족 앱의 홈스크린 위젯들을 모두 구현하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/224786923-fae783b5-9ada-411a-9829-da185cbe3326.png)
+
+## 홈 스크린 최종 구현 화면
+![image](https://user-images.githubusercontent.com/58906858/224789028-22e27802-394a-453a-b2d9-5cf4f916ea6a.png)
+![image](https://user-images.githubusercontent.com/58906858/224789095-52eb2530-3a9b-4a7a-8e65-ab43bde0c120.png)
+![image](https://user-images.githubusercontent.com/58906858/224789157-5c6b7ee8-5159-4856-9f08-73031af04829.png)
+![image](https://user-images.githubusercontent.com/58906858/224789195-db5135fd-a2b4-4435-abdb-b8d35c503d78.png)
+![image](https://user-images.githubusercontent.com/58906858/224789231-e3cbf13e-f94b-4c0e-a5f1-2d9224a13865.png)
+![image](https://user-images.githubusercontent.com/58906858/224789265-5b840368-f6f8-484e-b14b-cb0303da2108.png)
+
+
+
+
