@@ -42,7 +42,7 @@ class _WholeState extends State<Whole> {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(
-                            left: 70.0,
+                            left:50,
                           ),
                           child: Row(
                             children: [
