@@ -64,7 +64,7 @@ class _TopState extends State<Top> {
                   ),
                   child: Container(
                     height: 200,
-                    width: 190,
+                    width: 180,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -107,7 +107,7 @@ class _TopState extends State<Top> {
                   ),
                   child: Container(
                     height: 200,
-                    width: 190,
+                    width: 180,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
