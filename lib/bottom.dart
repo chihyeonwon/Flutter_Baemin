@@ -166,7 +166,7 @@ class Bottom extends StatelessWidget {
                   children: [
                     GestureDetector(
                       onTap:() { },
-                      child: Text('(주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 따라서',
+                      child: Text('(주)우아한형제들은 통신판매중개자이며, 통신판매의 당사자가 아닙니다.',
                           style: TextStyle(
                             fontSize: 12.0,
                             color: Colors.grey[700],
