@@ -107,7 +107,7 @@ class Other extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.only(right: 15.0),
                                 child: Container(
-                                  width: 180.0,
+                                  width: 150.0,
                                   height: 180.0,
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(15),
@@ -120,7 +120,7 @@ class Other extends StatelessWidget {
                               ),
                               Text('키크니와 아이들의 방학을 응',
                                   style: TextStyle(
-                                    fontSize: 15.0,
+                                    fontSize: 13.0,
                                     fontWeight: FontWeight.bold,
                                   )),
                               Text('원했어요!',
@@ -166,7 +166,7 @@ class Other extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.only(right: 15.0),
                                 child: Container(
-                                  width: 180.0,
+                                  width: 150.0,
                                   height: 200.0,
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(15),
@@ -179,7 +179,7 @@ class Other extends StatelessWidget {
                               ),
                               Text('배민이 한 눈에 보는 장사캘린',
                                   style: TextStyle(
-                                    fontSize: 15.0,
+                                    fontSize: 13.0,
                                     fontWeight: FontWeight.bold,
                                   )),
                               Text('더 만들었어요',
